@@ -16,21 +16,38 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
+    @State var option1: String = ""
+    @State var option2: String = ""
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-            }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
+        NavigationView {
+            VStack(alignment: .leading, spacing: nil, content: {
+                
+                
+                HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
+                        Text("First Option")
+                            .font(.callout)
+                            .bold()
+                        TextField("Enter first option...", text: $option1)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                })
+                HStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
+                            Text("Second Option")
+                                .font(.callout)
+                                .bold()
+                            TextField("Enter second option...", text: $option2)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                })
+                Spacer()
+                HStack(){
+                    Spacer()
+                    NavigationLink(destination:ContentViewTwo()) {
+                        Text("Next")
+                    }.navigationTitle("Options")
+                }
+                Spacer()
+            }).padding()
         }
     }
 

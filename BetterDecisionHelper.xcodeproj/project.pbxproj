@@ -15,6 +15,7 @@
 		FE29AE832576810900BB321E /* BetterDecisionHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE29AE812576810900BB321E /* BetterDecisionHelper.xcdatamodeld */; };
 		FE29AE8E2576810900BB321E /* BetterDecisionHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AE8D2576810900BB321E /* BetterDecisionHelperTests.swift */; };
 		FE29AE992576810900BB321E /* BetterDecisionHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AE982576810900BB321E /* BetterDecisionHelperUITests.swift */; };
+		FE29AEAA257688E900BB321E /* ContentViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AEA9257688E900BB321E /* ContentViewTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FE29AE942576810900BB321E /* BetterDecisionHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterDecisionHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE29AE982576810900BB321E /* BetterDecisionHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterDecisionHelperUITests.swift; sourceTree = "<group>"; };
 		FE29AE9A2576810900BB321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE29AEA9257688E900BB321E /* ContentViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				FE29AE762576810500BB321E /* BetterDecisionHelperApp.swift */,
 				FE29AE782576810500BB321E /* ContentView.swift */,
+				FE29AEA9257688E900BB321E /* ContentViewTwo.swift */,
 				FE29AE7A2576810900BB321E /* Assets.xcassets */,
 				FE29AE7F2576810900BB321E /* Persistence.swift */,
 				FE29AE842576810900BB321E /* Info.plist */,
@@ -269,6 +272,7 @@
 				FE29AE792576810500BB321E /* ContentView.swift in Sources */,
 				FE29AE772576810500BB321E /* BetterDecisionHelperApp.swift in Sources */,
 				FE29AE832576810900BB321E /* BetterDecisionHelper.xcdatamodeld in Sources */,
+				FE29AEAA257688E900BB321E /* ContentViewTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
