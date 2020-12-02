@@ -8,49 +8,52 @@
 import SwiftUI
 import CoreData
 
+
+
 struct ContentView: View {
+    /*
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
-    @State var option1: String = ""
-    @State var option2: String = ""
+ */
+    @EnvironmentObject var settings: Settings
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: nil, content: {
                 
                 
                 HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
-                        Text("First Option")
+                        Text("Option 1")
                             .font(.callout)
                             .bold()
-                        TextField("Enter first option...", text: $option1)
+                    TextField("Enter first option...", text: self.$settings.option1)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                 })
                 HStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: /*@START_MENU_TOKEN@*/nil/*@END_MENU_TOKEN@*/, content: {
-                            Text("Second Option")
+                            Text("Option 2")
                                 .font(.callout)
                                 .bold()
-                            TextField("Enter second option...", text: $option2)
+                    TextField("Enter second option...", text: self.$settings.option2)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                 })
                 Spacer()
                 HStack(){
                     Spacer()
-                    NavigationLink(destination:ContentViewTwo()) {
+                    .navigationTitle("Categories")
+                    .navigationBarItems(trailing: NavigationLink(destination:ContentViewTwo()) {
                         Text("Next")
-                    }.navigationTitle("Options")
+                    })
                 }
                 Spacer()
             }).padding()
         }
     }
-
+/*
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
@@ -66,7 +69,8 @@ struct ContentView: View {
             }
         }
     }
-
+*/
+    /*
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
@@ -81,17 +85,19 @@ struct ContentView: View {
             }
         }
     }
+ */
 }
-
+/*
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .short
     formatter.timeStyle = .medium
     return formatter
 }()
+*/
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView().environmentObject(Settings())
     }
 }

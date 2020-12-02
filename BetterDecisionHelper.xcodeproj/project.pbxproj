@@ -16,6 +16,9 @@
 		FE29AE8E2576810900BB321E /* BetterDecisionHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AE8D2576810900BB321E /* BetterDecisionHelperTests.swift */; };
 		FE29AE992576810900BB321E /* BetterDecisionHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AE982576810900BB321E /* BetterDecisionHelperUITests.swift */; };
 		FE29AEAA257688E900BB321E /* ContentViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AEA9257688E900BB321E /* ContentViewTwo.swift */; };
+		FE29AEB225772C4300BB321E /* ContentViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AEB125772C4300BB321E /* ContentViewThree.swift */; };
+		FE29AEC52577350900BB321E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AEC42577350900BB321E /* Settings.swift */; };
+		FE29AECD2577851F00BB321E /* ContentViewFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29AECC2577851F00BB321E /* ContentViewFour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FE29AE982576810900BB321E /* BetterDecisionHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterDecisionHelperUITests.swift; sourceTree = "<group>"; };
 		FE29AE9A2576810900BB321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE29AEA9257688E900BB321E /* ContentViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTwo.swift; sourceTree = "<group>"; };
+		FE29AEB125772C4300BB321E /* ContentViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewThree.swift; sourceTree = "<group>"; };
+		FE29AEC42577350900BB321E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FE29AECC2577851F00BB321E /* ContentViewFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewFour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,12 @@
 		FE29AE752576810500BB321E /* BetterDecisionHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FE29AEC42577350900BB321E /* Settings.swift */,
 				FE29AE762576810500BB321E /* BetterDecisionHelperApp.swift */,
 				FE29AE782576810500BB321E /* ContentView.swift */,
 				FE29AEA9257688E900BB321E /* ContentViewTwo.swift */,
+				FE29AEB125772C4300BB321E /* ContentViewThree.swift */,
+				FE29AECC2577851F00BB321E /* ContentViewFour.swift */,
 				FE29AE7A2576810900BB321E /* Assets.xcassets */,
 				FE29AE7F2576810900BB321E /* Persistence.swift */,
 				FE29AE842576810900BB321E /* Info.plist */,
@@ -270,7 +279,10 @@
 			files = (
 				FE29AE802576810900BB321E /* Persistence.swift in Sources */,
 				FE29AE792576810500BB321E /* ContentView.swift in Sources */,
+				FE29AECD2577851F00BB321E /* ContentViewFour.swift in Sources */,
 				FE29AE772576810500BB321E /* BetterDecisionHelperApp.swift in Sources */,
+				FE29AEB225772C4300BB321E /* ContentViewThree.swift in Sources */,
+				FE29AEC52577350900BB321E /* Settings.swift in Sources */,
 				FE29AE832576810900BB321E /* BetterDecisionHelper.xcdatamodeld in Sources */,
 				FE29AEAA257688E900BB321E /* ContentViewTwo.swift in Sources */,
 			);
