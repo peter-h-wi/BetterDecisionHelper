@@ -29,7 +29,7 @@ struct ContentView: View {
                         Text("Option 1")
                             .font(.callout)
                             .bold()
-                    TextField("Enter first option...", text: self.$settings.option1)
+                    TextField("Enter first option...", text: $settings.option1)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                 })
@@ -37,7 +37,7 @@ struct ContentView: View {
                             Text("Option 2")
                                 .font(.callout)
                                 .bold()
-                    TextField("Enter second option...", text: self.$settings.option2)
+                    TextField("Enter second option...", text: $settings.option2)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                 })
